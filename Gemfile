@@ -8,6 +8,19 @@ gem "rails", "~> 7.1.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# Bootstrap
+gem "bootstrap", "~> 5.2"
+
+# Fontawesome
+gem "font-awesome-sass", "~> 6.1"
+
+# prefixer
+gem "autoprefixer-rails"
+
+
+# SCSS
+gem "sassc-rails"
+
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 
@@ -19,6 +32,9 @@ gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
+
+# Simple form gem
+gem "simple_form"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"

@@ -1,0 +1,26 @@
+.collab {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  // padding-top: 2rem;
+}
+
+.collab--logo {
+  cursor: pointer;
+  // padding-top: 3rem;
+}
+
+.collab--logo-img {
+  max-width: 12rem;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: 0.5s;
+
+  &:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}

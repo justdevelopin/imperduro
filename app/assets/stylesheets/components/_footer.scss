@@ -1,0 +1,70 @@
+.footer {
+  /* height: 60vh; */
+  background-color: $white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 5rem;
+
+  &--logo {
+    max-width: 25rem;
+    margin-bottom: 1rem;
+    height: 100%;
+  }
+
+  .contacts {
+    height: 100%;
+    border-top-left-radius: 10px;
+    color: $white;
+    background-color: $main-darker;
+    box-shadow: 0.1px 1.5px 7px $box-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &-collab {
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  &-collab-text {
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 2rem 5rem;
+    line-height: 3rem;
+  }
+
+  &-contacts--logo {
+
+
+    max-width: 5rem;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .email,
+  .phone {
+    color: $white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+  }
+
+  .separator {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 5rem;
+
+  }
+
+
+
+}
