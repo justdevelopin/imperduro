@@ -1,12 +1,7 @@
-<section class="information">
+<section class="information" data-controller="intersection" >
   <div class="info--pcs">
-    <div class="info info--first-box hidden--part">
-      <img
-        src="img/amsterdam.jpg"
-        alt="Amsterdam"
-        id="img1"
-        class="info--p"
-      />
+    <div class="info info--first-box hidden--part" data-intersection-target="section">
+      <%= image_tag "amsterdam.jpg", class: "info--p" %>
       <p class="info--text" id="text1">
         IMPÉRDURO trabaja con un sistema de control de calidad para
         garantizar un alto nivel de calidad constante. Todo el proceso de
@@ -26,7 +21,7 @@
       </p>
     </div>
 
-    <div class="info info--second-box hidden--part">
+    <div class="info info--second-box hidden--part" data-intersection-target="section">
       <p class="info--text" id="text2">
         Tanto la calidad del producto como la del proceso son inspeccionadas
         continuamente por organismos de inspección independientes y
@@ -35,12 +30,7 @@
         diferentes aplicación, está garantizada por marcas y estándares de
         calidad.
       </p>
-      <img
-        src="img/blacked-out.jpg"
-        alt="Color Negro"
-        id="img2"
-        class="info--p"
-      />
+      <%= image_tag "blacked-out.jpg", class: "info--p" %>
       <p class="info--text" id="text3">
         El núcleo de REACH implica que, en principio, una empresa debe
         conocer los riesgos de todas las sustancias que suministra y debe
@@ -48,8 +38,8 @@
       </p>
     </div>
 
-    <div class="info info--third-box hidden--part">
-      <img src="img/painting.jpg" alt="Pintar" id="img3" class="info--p" />
+    <div class="info info--third-box hidden--part" data-intersection-target="section">
+      <%= image_tag "painting.jpg", class: "info--p" %>
 
       <p class="info--text" id="text3">
         IMPÉRDURO, como especialista en técnicas de conexión para sistemas
