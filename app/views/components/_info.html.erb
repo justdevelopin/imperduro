@@ -1,58 +1,90 @@
-<section class="information" data-controller="intersection" >
-  <div class="info--pcs">
-    <div class="info info--first-box hidden--part" data-intersection-target="section">
-      <%= image_tag "amsterdam.jpg", class: "info--p" %>
-      <p class="info--text" id="text1">
-        IMPÉRDURO trabaja con un sistema de control de calidad para
-        garantizar un alto nivel de calidad constante. Todo el proceso de
-        entrada de las materias primas, la fabricación hasta el producto
-        terminado y el suministro se lleva a cabo de conformidad con los
-        procedimientos prescritos y controlados. Por supuesto, el sistema
-        cuenta con las certificaciones ISO 9001 e ISO 14000. De esta manera,
-        el usuario puede estar seguro de que la calidad está garantizada. La
-        calidad del producto, centrada en aplicaciones específicas, está
-        garantizada por marcas de certificación tales como BELGAQUA, British
-        Standard, DVGW, KOMO, Gastec, KIWA, WRAS y CSTB. Muchos productos
-        también cuentan con el distintivo CE y cumplen con los estándares
-        EN. <br /><br />REACH es una nueva normativa europea relacionada con
-        la producción, importación y uso de sustancias químicas solas o en
-        preparados. Las siglas significan Registro, Evaluación, Autorización
-        y Restricción de Sustancias Químicas.
-      </p>
+<section class="section-info">
+  <h2 class="info-heading container">INFORMACIÓN</h2>
+
+
+    <div class="d-flex container">
+      <button class="btn-collapse" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Sistema de control</button>
+      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Núcleo de REACH</button>
+      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Sistemas de tuberías</button>
+      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample3">Medalla De Oro Ecovadis</button>
+    </div>
+    <div class="row">
+
+      <div class="collapse multi-collapse show" id="multiCollapseExample1">
+        <div class="card card-body">
+          <%= image_tag "ce.png", class:"quality-logo" %>
+          <p class="card-body-p">
+            IMPÉRDURO trabaja con un sistema de control de calidad para
+            garantizar un alto nivel de calidad constante. Todo el proceso de
+            entrada de las materias primas, la fabricación hasta el producto
+            terminado y el suministro se lleva a cabo de conformidad con los
+            procedimientos prescritos y controlados. Por supuesto, el sistema
+            cuenta con las certificaciones ISO 9001 e ISO 14000. De esta manera,
+            el usuario puede estar seguro de que la calidad está garantizada. La
+            calidad del producto, centrada en aplicaciones específicas, está
+            garantizada por marcas de certificación tales como BELGAQUA, British
+            Standard, DVGW, KOMO, Gastec, KIWA, WRAS y CSTB. Muchos productos
+            también cuentan con el distintivo CE y cumplen con los estándares
+            EN. <br> Tanto la calidad del producto como la del proceso son inspeccionadas
+            continuamente por organismos de inspección independientes y
+            acreditados en el propio país y en el extranjero. Cuando elige
+            IMPÉRDURO, usted elige calidad. La calidad del producto, enfocada a
+            diferentes aplicación, está garantizada por marcas y estándares de
+            calidad.
+          </p>
+          <%= image_tag "atestem.png", class:"quality-logo" %>
+
+        </div>
+      </div>
+
+
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <p class="card-body-p">
+            El núcleo de REACH implica que, en principio, una empresa debe
+            conocer los riesgos de todas las sustancias que suministra y debe
+            tomar medidas para gestionar los riesgos. <br> REACH es una nueva normativa europea relacionada con
+            la producción, importación y uso de sustancias químicas solas o en
+            preparados. Las siglas significan Registro, Evaluación, Autorización
+            y Restricción de Sustancias Químicas.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <div class="card card-body">
+          <%= image_tag "aenor.png", class:"quality-logo" %>
+          <p class="card-body-p">
+            IMPÉRDURO, como especialista en técnicas de conexión para sistemas
+            de tuberías de plástico, ofrece a los profesionales una gama única
+            de productos de calidad con marcas de homologación líderes en la
+            industria. Nuestros productos son ideales para los sistemas de
+            tuberías industriales y también pueden ayudarle en casos especiales
+            como resistencias químicas, temperaturas más altas, mayores tiempos
+            de apertura, tuberías con diámetros muy grandes o conexiones con un
+            ajuste ancho. Tanto si su sistema de tuberías está hecho de PVC,
+            PVC-C, ABS, PP o PE, IMPÉRDURO siempre ofrece una solución adecuada
+            para unas conexiones sostenibles.
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse multi-collapse" id="multiCollapseExample4">
+        <div class="card card-body">
+          <%= image_tag "oro.png", class:"quality-logo" %>
+          <p class="card-body-p">
+            Los logros de IMPÉRDURO en materia de desarrollo sostenible y
+            responsabilidad social corporativa han sido reconocidos con una
+            medalla de oro.
+            Nuestra actuación en materia de sostenibilidad y responsabilidad
+            social corporativa ha sido revisada y evaluada por EcoVadis,
+            el proveedor independiente de calificaciones de sostenibilidad
+            corporativa más grande y fiable del mundo.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="info info--second-box hidden--part" data-intersection-target="section">
-      <p class="info--text" id="text2">
-        Tanto la calidad del producto como la del proceso son inspeccionadas
-        continuamente por organismos de inspección independientes y
-        acreditados en el propio país y en el extranjero. Cuando elige
-        IMPÉRDURO, usted elige calidad. La calidad del producto, enfocada a
-        diferentes aplicación, está garantizada por marcas y estándares de
-        calidad.
-      </p>
-      <%= image_tag "blacked-out.jpg", class: "info--p" %>
-      <p class="info--text" id="text3">
-        El núcleo de REACH implica que, en principio, una empresa debe
-        conocer los riesgos de todas las sustancias que suministra y debe
-        tomar medidas para gestionar los riesgos.
-      </p>
-    </div>
 
-    <div class="info info--third-box hidden--part" data-intersection-target="section">
-      <%= image_tag "painting.jpg", class: "info--p" %>
-
-      <p class="info--text" id="text3">
-        IMPÉRDURO, como especialista en técnicas de conexión para sistemas
-        de tuberías de plástico, ofrece a los profesionales una gama única
-        de productos de calidad con marcas de homologación líderes en la
-        industria. Nuestros productos son ideales para los sistemas de
-        tuberías industriales y también pueden ayudarle en casos especiales
-        como resistencias químicas, temperaturas más altas, mayores tiempos
-        de apertura, tuberías con diámetros muy grandes o conexiones con un
-        ajuste ancho. Tanto si su sistema de tuberías está hecho de PVC,
-        PVC-C, ABS, PP o PE, IMPÉRDURO siempre ofrece una solución adecuada
-        para unas conexiones sostenibles.
-      </p>
-    </div>
-  </div>
 </section>

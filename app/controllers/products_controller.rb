@@ -1,7 +1,4 @@
-class PagesController < ApplicationController
-  def home
-  end
-
+class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
