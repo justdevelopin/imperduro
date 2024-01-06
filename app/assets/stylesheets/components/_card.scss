@@ -1,17 +1,31 @@
 .section-product-index {
   padding-top: 20rem;
+  background-color: $black;
+  .secondary-heading {
+    color: #e9e9e9;
+  }
+
+  .tirtuary-heading {
+    color: #d3d4d4;
+  }
+
+  .btn-danger {
+    background-color: $main-lighter;
+    &:hover {
+      background-color: #a8091e;
+    }
+  }
 }
 
 .product {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: 3rem;
 }
 
 .product-card {
   max-width: 30rem;
-  background-color: #f4e7e6;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +37,8 @@
 .product-card-img {
   max-width: 25rem;
   max-height: 20rem;
-  padding: 1rem;
+  padding: 2rem 0;
+  border-bottom: solid 1px $main-darker;
 }
 
 .product-card-body {

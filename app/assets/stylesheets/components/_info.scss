@@ -1,13 +1,17 @@
-.section-info {
-  padding-block: 3rem;
+#section-info {
+  // padding-top: 3rem;
+  background-color: $black;
+  padding-block: 10rem;
+  box-shadow: 0 0 17px $box-shadow;
+
 
   .info-heading {
-    color: $main-lighter;
+    color: $white;
     font-size: 4.5rem;
     font-weight: 900;
     // text-align: center;
     // padding: 0rem 10rem 5rem 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-shadow: 0.1px 1.5px 7px #12130f54;
   }
 }
@@ -28,10 +32,10 @@
 }
 
 .collapsed {
-  background-color: #f1ced3;
-  color: $main-lighter;
+  background-color: $black;
+  color: $white;
   &:hover {
-    background-color: #ebb6bc;
+    background-color: #3b3c3d;
   }
 }
 

@@ -1,0 +1,80 @@
+.section-product {
+  background-color: $black;
+  padding-block: 20rem ;
+
+  .main-info {
+    border-bottom: solid 2px #f4e7e62a;
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .ce {
+    max-width: 5rem;
+    background-color: $white;
+  }
+  .product-image {
+    max-width: 35rem;
+    margin-bottom: 4rem;
+  }
+
+  .product-details {
+    background-color: $black;
+  }
+
+  .secondary-heading {
+    color: $white;
+    margin-bottom: 2rem;
+  }
+
+  .product-description {
+    color: $white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 4rem;
+  }
+
+  .btn-collapse {
+    border: none;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: $main-lighter;
+    color: $white;
+    padding: 1.5rem 4rem;;
+    transition: 0.2s;
+    margin-top: 2rem;
+  }
+
+  .logos {
+    display: flex;
+    gap: 2rem;
+
+  }
+
+  .quality-logos {
+    height: 5rem;
+    margin-bottom: 2rem;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 3px;
+  }
+  .ce {
+    padding: 0;
+  }
+
+  .collapsed {
+    background-color: $black;
+    color: $white;
+    &:hover {
+      background-color: #3b3c3d;
+    }
+  }
+  .card-body {
+    margin-bottom: 1rem;
+    border-color: $main-lighter;
+    background-color: $main-lighter;
+    padding: 3rem;
+    color: $white;
+    border-radius: 0;
+  }
+}

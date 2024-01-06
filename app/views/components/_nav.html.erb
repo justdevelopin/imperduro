@@ -2,7 +2,7 @@
   <ul class="nav--ul">
     <div class="hero--logo-container">
       <a href="#" class="hero--logo">
-        <%= image_tag "imperduro-t.png", class: "hero--logo-img"%>
+        <%= image_tag "imperduro-t.png", loading: "lazy", class: "hero--logo-img"%>
       </a>
     </div>
     <div class="nav--links">
@@ -10,13 +10,13 @@
         <%= link_to "INICIO", root_path, class:"nav--a nav-pro" %>
       </li>
       <li class="nav--li">
-        <a class="nav--a nav-info" href="#">INFORMACIÓN</a>
+        <%= link_to 'INFORMACIÓN', "#{root_path}#section-info", class:"nav--a nav-info" %>
       </li>
       <li class="nav--li">
         <%= link_to "PRODUCTOS", products_path, class:"nav--a nav-pro" %>
       </li>
       <li class="nav--li">
-        <a class="nav--a nav-con" href="#">CONTACTO</a>
+        <%= link_to 'CONTACTO', "#footer", class:"nav--a nav-info" %>
       </li>
     </div>
   </ul>

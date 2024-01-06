@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="footer-collab">
     <%# <img src="logo/black-logo.png" alt="" class="footer--logo" /> %>
     <p class="footer-collab-text">
@@ -8,7 +8,8 @@
         para usted.
       </strong>
       <br><br>
-      ®2023 Impérduro, parte de BGILTD
+      ®<%= Time.now.strftime("%Y") %> Impérduro, parte de BGILTD
+
     </p>
     <%= image_tag "imperduro-t.png", class:"footer--logo" %>
   </div>

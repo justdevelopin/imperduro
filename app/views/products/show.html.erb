@@ -1,1 +1,42 @@
 
+<section class="section-product">
+  <div class="main-info container d-flex flex-column">
+    <div>
+      <%= image_tag @product.image_url, loading: "lazy", class:"product-image" %>
+    </div>
+    <h2 class="secondary-heading"><%= @product.name %></h2>
+
+
+    <p class="product-description"><%= @product.description %></p>
+    <div class="logos">
+      <%= image_tag "ce.png", class:"quality-logos ce" %>
+      <%= image_tag "acs.png", class:"quality-logos" %>
+      <%= image_tag "kiwa-ata.png", class:"quality-logos" %>
+    </div>
+  </div>
+
+
+  <div class="d-flex container">
+    <button class="btn-collapse" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Cualidades:</button>
+    <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Apropiado para:</button>
+  </div>
+  <div class="row">
+
+    <div class="collapse multi-collapse show" id="multiCollapseExample1">
+      <div class="card card-body">
+        <p class="card-body-p">
+          <%= @product.qualities %>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        <p class="card-body-p">
+          <%= @product.suitables %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
