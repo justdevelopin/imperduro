@@ -1,17 +1,17 @@
 
 <section class="section-product">
-  <div class="main-info container d-flex flex-column">
-    <div>
+  <div class="main-info container d-flex">
       <%= image_tag @product.image_url, loading: "lazy", class:"product-image" %>
-    </div>
-    <h2 class="secondary-heading"><%= @product.name %></h2>
 
 
-    <p class="product-description"><%= @product.description %></p>
-    <div class="logos">
-      <%= image_tag "ce.png", class:"quality-logos ce" %>
-      <%= image_tag "acs.png", class:"quality-logos" %>
-      <%= image_tag "kiwa-ata.png", class:"quality-logos" %>
+    <div>
+      <h2 class="secondary-heading"><%= @product.name %></h2>
+      <p class="product-description"><%= @product.description %></p>
+      <div class="logos">
+        <%= image_tag "ce.png", class:"quality-logos ce" %>
+        <%= image_tag "acs.png", class:"quality-logos" %>
+        <%= image_tag "kiwa-ata.png", class:"quality-logos" %>
+      </div>
     </div>
   </div>
 

@@ -26,23 +26,30 @@
 .product-card {
   max-width: 30rem;
   background-color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   overflow: hidden;
   box-shadow: 0.1px 1.5px 5px $box-shadow;
-
+  position: relative;
 }
 
 .product-card-img {
-  max-width: 25rem;
   max-height: 20rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
   padding: 2rem 0;
   border-bottom: solid 1px $main-darker;
+  margin-bottom: 2rem;
 }
 
 .product-card-body {
   padding: 2rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-card-title {
@@ -57,5 +64,8 @@
 
 .product-path {
   font-size: 1.6rem;
-
+  position: absolute;
+  bottom: 0;
+  right:0;
+  border-radius: 0;
 }

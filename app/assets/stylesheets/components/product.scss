@@ -6,6 +6,8 @@
     border-bottom: solid 2px #f4e7e62a;
     padding-bottom: 6rem;
     margin-bottom: 6rem;
+    align-items: center;
+    gap: 10rem;
   }
 
   .ce {
@@ -13,7 +15,8 @@
     background-color: $white;
   }
   .product-image {
-    max-width: 35rem;
+    max-height: 40rem;
+    max-width: 40rem;
     margin-bottom: 4rem;
   }
 

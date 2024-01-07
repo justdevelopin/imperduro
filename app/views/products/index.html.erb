@@ -5,10 +5,12 @@
     <div class="product">
       <% @products.each do |product|%>
         <div class="product-card">
-          <%= image_tag "products/mp30.png", loading: "lazy", class:"product-card-img" %>
           <div class="product-card-body">
-            <h5 class="product-card-title mb-3"><%= product.name %></h5>
-            <p class="product-card-text mb-3"><%= product.description %></p>
+            <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
+            <div class="product-textbox">
+              <h5 class="product-card-title mb-3"><%= product.name %></h5>
+              <p class="product-card-text mb-3"><%= product.description %></p>
+            </div>
             <%= link_to "Mas detalles", product, class:"btn btn-danger w-100 product-path" %>
           </div>
         </div>
