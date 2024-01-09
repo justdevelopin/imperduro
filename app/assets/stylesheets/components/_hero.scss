@@ -24,3 +24,9 @@
     max-height: 100vh;
   }
 }
+
+@media (max-width: 600px) {
+  .carousel-inner {
+    padding-top: 10rem;
+  }
+}

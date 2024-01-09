@@ -69,3 +69,14 @@
   right:0;
   border-radius: 0;
 }
+
+
+@media (max-width: 800px) {
+  .section-product-index {
+
+    .tirtuary-heading {
+      color: #d3d4d4;
+      font-size: 2rem;
+    }
+  }
+}
