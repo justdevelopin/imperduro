@@ -1,9 +1,10 @@
 .collab {
-  height: 25vh;
+  padding: 3rem 3rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 7rem;
   // padding-top: 2rem;
 }
@@ -23,4 +24,13 @@
     filter: grayscale(0);
     opacity: 1;
   }
+}
+
+
+@media (max-width: 1020px) {
+
+  .collab--logo-img {
+    width: 9rem;
+  }
+
 }

@@ -118,132 +118,95 @@ product6 = Product.create(
 product7 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/stex.png'),
   name: 'Stex Liquid',
-  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología SMP',
-  qualities: 'Impermeable y hermético, Excelente adherencia en muchas superficies (sin imprimación),
-              Se puede aplicar sobre superficies húmedas, Resistente a la intemperie y a los rayos UV,
-              Resistente al cloro y al agua salada, Autonivelante, No encoge
-              Permanentemente elástico (>250%), Pintable y enyesable,
-              Libre de betún, isocianatos y disolventes',
-  suitables: 'Para sellar, proteger y reparar techos, paredes, grietas,
-              juntas, conductos y conexiones. Excelente adherencia (sin
-              imprimación) sobre una amplia variedad de materiales, como
-              hormigón, metal, piedra, madera, zinc, PVC y EPDM (prueba
-              previa).
-              Se puede aplicar en superficies horizontales y verticales y es
-              adecuado para aplicaciones en interiores y exteriores, como
-              sellado de conductos, sellado de pisos, juntas de expansión,
-              conexiones de marcos de ventanas y paredes y estructuras
-              subterráneas.
-              Apto también para la impermeabilización bajo baldosas en cuartos
-              húmedos y piscinas. Perfecto para el sellado hermético de la
-              envolvente del edificio. La hermeticidad ha sido probada según
-              EN 12114 y EN 1026.'
+  description: 'Limpiador de drenaje líquido profesional
+
+  ',
+  qualities: 'Rápido,
+              Efectivo,
+              Fácil de usar.',
+  suitables: 'Adecuado para eliminar
+  obstrucciones y olores desagradables causados, por ejemplo, por cabello,
+  jabón, aceite, grasa y residuos de alimentos en desagües de fregaderos de
+  cocina, lavabos, duchas y bañeras en baños, cocina e inodoro. Adecuado para
+  materiales que incluyen sintéticos (PVC, PVCC, ABS, acrílico), esmalte,
+  porcelana y metales (cobre, acero inoxidable, cromo, hierro) con la excepción
+  del aluminio. También apto para uso preventivo.'
 )
 
 product8 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/tape-200.png'),
   name: 'JBS 200 - tape',
-  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología SMP',
-  qualities: 'Impermeable y hermético, Excelente adherencia en muchas superficies (sin imprimación),
-              Se puede aplicar sobre superficies húmedas, Resistente a la intemperie y a los rayos UV,
-              Resistente al cloro y al agua salada, Autonivelante, No encoge
-              Permanentemente elástico (>250%), Pintable y enyesable,
-              Libre de betún, isocianatos y disolventes',
-  suitables: 'Para sellar, proteger y reparar techos, paredes, grietas,
-              juntas, conductos y conexiones. Excelente adherencia (sin
-              imprimación) sobre una amplia variedad de materiales, como
-              hormigón, metal, piedra, madera, zinc, PVC y EPDM (prueba
-              previa).
-              Se puede aplicar en superficies horizontales y verticales y es
-              adecuado para aplicaciones en interiores y exteriores, como
-              sellado de conductos, sellado de pisos, juntas de expansión,
-              conexiones de marcos de ventanas y paredes y estructuras
-              subterráneas.
-              Apto también para la impermeabilización bajo baldosas en cuartos
-              húmedos y piscinas. Perfecto para el sellado hermético de la
-              envolvente del edificio. La hermeticidad ha sido probada según
-              EN 12114 y EN 1026.'
+  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología PMS',
+  qualities: 'JBS 200 es muy elástica y tiene una fuerza adhesiva extremadamente alte.
+  La cinta no necesita secarse y es inmediatamente resistente al agua.',
+  suitables: 'Lo hace ideal para reparaciones (de emergencia).
+  En combinación con los recubrimientos JBS 200, la cinta también es adecuada para unir grandes uniones,
+  grietas y desgarros y para aumentar el espesor de capa. La cinta también se adhiere a muchas
+  superficies.'
 )
 
 product9 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/foam.png'),
   name: 'Foam 200',
-  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología SMP',
-  qualities: 'Impermeable y hermético, Excelente adherencia en muchas superficies (sin imprimación),
-              Se puede aplicar sobre superficies húmedas, Resistente a la intemperie y a los rayos UV,
-              Resistente al cloro y al agua salada, Autonivelante, No encoge
-              Permanentemente elástico (>250%), Pintable y enyesable,
-              Libre de betún, isocianatos y disolventes',
-  suitables: 'Para sellar, proteger y reparar techos, paredes, grietas,
-              juntas, conductos y conexiones. Excelente adherencia (sin
-              imprimación) sobre una amplia variedad de materiales, como
-              hormigón, metal, piedra, madera, zinc, PVC y EPDM (prueba
-              previa).
-              Se puede aplicar en superficies horizontales y verticales y es
-              adecuado para aplicaciones en interiores y exteriores, como
-              sellado de conductos, sellado de pisos, juntas de expansión,
-              conexiones de marcos de ventanas y paredes y estructuras
-              subterráneas.
-              Apto también para la impermeabilización bajo baldosas en cuartos
-              húmedos y piscinas. Perfecto para el sellado hermético de la
-              envolvente del edificio. La hermeticidad ha sido probada según
-              EN 12114 y EN 1026.'
+  description: 'Espuma para pistola monocomponente profesional y permanentemente elástica',
+  qualities: 'Hermético, probado a 1.050 Pa,
+  Permanece elástico (25%),
+  Excelente aislamiento acústico,
+  Baja expansión posterior, mínima pérdida de corte,
+  Acabados de pintura y estuco,
+  Resistente al agua,
+  Resistente a productos químicos,
+  Resistente a temperaturas de -40°C a +90°C,
+  ± 70% de células cerradas.',
+  suitables: 'Indicado para sellar y aislar, así como rellenar juntas, juntas,
+  agujeros, grietas y huecos y realizar juntas para evitar pérdidas de aire y
+  calor, corrientes de aire, ruidos y humedades. Esto incluye juntas entre paredes
+  divisorias y techos, entre paredes, espacios libres entre los marcos de ventanas o
+  puertas y la pared, juntas de cumbrera, plataformas de techo, chimeneas y paneles de
+  techo, conductos de tuberías, fundas, cables y conductos eléctricos. Se adhiere a muchos
+  materiales de construcción, incluidos madera, hormigón, piedra, ladrillos, yeserías,
+  metales, vidrio y muchos plásticos, incluidos poliestireno, poliéster y PVC.'
 )
 
 product10 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/fitterski.png'),
   name: 'Fitterski',
-  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología SMP',
-  qualities: 'Impermeable y hermético, Excelente adherencia en muchas superficies (sin imprimación),
-              Se puede aplicar sobre superficies húmedas, Resistente a la intemperie y a los rayos UV,
-              Resistente al cloro y al agua salada, Autonivelante, No encoge
-              Permanentemente elástico (>250%), Pintable y enyesable,
-              Libre de betún, isocianatos y disolventes',
-  suitables: 'Para sellar, proteger y reparar techos, paredes, grietas,
-              juntas, conductos y conexiones. Excelente adherencia (sin
-              imprimación) sobre una amplia variedad de materiales, como
-              hormigón, metal, piedra, madera, zinc, PVC y EPDM (prueba
-              previa).
-              Se puede aplicar en superficies horizontales y verticales y es
-              adecuado para aplicaciones en interiores y exteriores, como
-              sellado de conductos, sellado de pisos, juntas de expansión,
-              conexiones de marcos de ventanas y paredes y estructuras
-              subterráneas.
-              Apto también para la impermeabilización bajo baldosas en cuartos
-              húmedos y piscinas. Perfecto para el sellado hermético de la
-              envolvente del edificio. La hermeticidad ha sido probada según
-              EN 12114 y EN 1026.'
+  description: 'Pasta de sellado para sellar uniones roscadas metálicas.',
+  qualities: 'La pasta selladora Silpat tiene la ventaja de que no se endurece,
+  lo que permite realizar ajustes. La pasta es resistente al gas y al agua y
+  tiene propiedades anticorrosión. Disponible en prácticos tubos de 200 gramos.',
+  suitables: 'Para sellar uniones roscadas metálicas,
+  como en sistemas de gas, agua (instalaciones de calefacción),
+  aire comprimido etc. Para agua, usar en combinación con cáñamo.
+  Para gas natural, propano y butano, usar sin cáñamo. Gas: -20ºC a
+  +70 ºC, máx. 5 bares. Agua: 95ºC, máx. 16 bares: 130ºC, máx. 7 bares.'
 )
 
 product11 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/jbtp-200.png'),
   name: 'JBS 200 - Geotextile',
-  description: 'Revestimiento elástico impermeable y hermético basado en la innovadora tecnología SMP',
-  qualities: 'Impermeable y hermético, Excelente adherencia en muchas superficies (sin imprimación),
-              Se puede aplicar sobre superficies húmedas, Resistente a la intemperie y a los rayos UV,
-              Resistente al cloro y al agua salada, Autonivelante, No encoge
-              Permanentemente elástico (>250%), Pintable y enyesable,
-              Libre de betún, isocianatos y disolventes',
-  suitables: 'Para sellar, proteger y reparar techos, paredes, grietas,
-              juntas, conductos y conexiones. Excelente adherencia (sin
-              imprimación) sobre una amplia variedad de materiales, como
-              hormigón, metal, piedra, madera, zinc, PVC y EPDM (prueba
-              previa).
-              Se puede aplicar en superficies horizontales y verticales y es
-              adecuado para aplicaciones en interiores y exteriores, como
-              sellado de conductos, sellado de pisos, juntas de expansión,
-              conexiones de marcos de ventanas y paredes y estructuras
-              subterráneas.
-              Apto también para la impermeabilización bajo baldosas en cuartos
-              húmedos y piscinas. Perfecto para el sellado hermético de la
-              envolvente del edificio. La hermeticidad ha sido probada según
-              EN 12114 y EN 1026.'
+  description: 'Paño elástico para uso en combinación con JBS 200 Liquid Rubber.',
+  qualities: 'Elástico,
+  Excelente absorción del caucho líquido JBS-200,
+  Fuerte,
+  No tejido.',
+  suitables: 'Adecuado para usar en combinación con JBS 200
+  Liquid Rubber en caso de aplicaciones de unión, grietas y
+  puentes de desgarros. Adecuado para sellar y proteger una amplia
+  variedad de materiales, como hormigón, metal, piedra, madera, betún,
+  zinc, PVC, EPDM (prueba primero), etc. Para pisos, tabiques, paredes,
+  uniones, juntas, conductos y componentes estructurales. . Excelente
+  para aplicaciones interiores y exteriores (baños, sótanos, balcones,
+    techos, etc.), incluidos canalones, lavabos de ducha, conductos, uniones
+    de pisos, juntas de expansión, juntas de marcos de ventanas y elementos a
+    nivel del suelo. Adecuado también como capa impermeable bajo azulejos en
+    ambientes húmedos, como baños, piscinas, balcones, terrazas, etc.'
 )
 
 product4 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/jbs-20-tix.png'),
   name: 'Tix de goma',
-  description: 'Revestimiento universal, tixotrópico, duradero, impermeable, hermético y protector.',
+  description: 'Recubrimiento universal, tixotrópico, duradero, impermeable, hermético y protector.',
   qualities: 'Impermeable y hermético,
   Muy alto nivel de elasticidad permanente (900%),
   Excelente adherencia a muchos sustratos,
