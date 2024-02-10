@@ -17,7 +17,7 @@ gem "font-awesome-sass", "~> 6.1"
 # prefixer
 gem "autoprefixer-rails"
 
-
+gem 'refraction', '~> 0.2.0'
 # SCSS
 gem "sassc-rails"
 
