@@ -6,7 +6,9 @@
       <% @products.each do |product|%>
         <div class="product-card">
           <div class="product-card-body">
-            <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
+            <div class="product-card-img-capsul">
+              <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
+            </div>
             <div class="product-textbox">
               <h5 class="product-card-title mb-3"><%= product.name %></h5>
               <p class="product-card-text mb-3"><%= product.description %></p>
