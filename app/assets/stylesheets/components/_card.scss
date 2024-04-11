@@ -54,17 +54,24 @@
 }
 
 .product-card-title {
+  display: flex;
+  justify-content: center;
+  color: $black;
   font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
+  text-decoration: none;
 }
 
 .product-card-text {
-  font-size: 1.6rem;;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
 }
 
 .product-path {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+
   position: absolute;
   bottom: 0;
   right:0;

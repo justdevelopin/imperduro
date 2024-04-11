@@ -10,7 +10,7 @@
               <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
             </div>
             <div class="product-textbox">
-              <h5 class="product-card-title mb-3"><%= product.name %></h5>
+              <%= link_to product.name , product, class:"product-card-title" %>
               <p class="product-card-text mb-3"><%= product.description %></p>
             </div>
             <%= link_to "Mas detalles", product, class:"btn btn-danger w-100 product-path" %>
