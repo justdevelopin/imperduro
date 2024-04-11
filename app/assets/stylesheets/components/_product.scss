@@ -1,6 +1,7 @@
 .section-product {
   background-color: $black;
-  padding-block: 20rem ;
+  padding-block: 20rem;
+  width: 100%;
 
   .main-info {
     border-bottom: solid 2px #f4e7e62a;
@@ -75,6 +76,7 @@
   }
   .card-body {
     margin-bottom: 1rem;
+    margin-right: 0;
     border-color: $main-lighter;
     background-color: $main-lighter;
     padding: 3rem;
