@@ -7,10 +7,24 @@
   transition: 0.5s;
   z-index: 12;
   opacity: 0.95;
-  padding-right: 5rem;
+  justify-content: center;
 
-  .navbar-toggler-icon {
-    // margin-right: 4rem;
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .show .nav-item {
+    padding: 1rem 0;
+    transition: 1000s;
+  }
+
+  .collapsing .nav-item {
+    padding: 2rem 0;
+    transition: 0.5s;
+  }
+
+  .container-fluid {
+    align-items: center;
   }
 
   // display: flex;
