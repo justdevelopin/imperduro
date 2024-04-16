@@ -76,12 +76,18 @@
   }
   .card-body {
     margin-bottom: 1rem;
-    margin-right: 0;
     border-color: $main-lighter;
     background-color: $main-lighter;
     padding: 3rem;
     color: $white;
     border-radius: 0;
+  }
+  #multiCollapseExample1, #multiCollapseExample2 {
+    margin-right: 0 !important;
+  }
+
+  .p-content {
+    width: 100%;
   }
 }
 
