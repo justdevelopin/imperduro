@@ -67,6 +67,30 @@
     padding: 0;
   }
 
+  .show-product-price {
+    color: $white;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    // color: #300309da;
+
+    span {
+      font-size: 13px;
+      opacity: 55%;
+    }
+  }
+
+  .show-product-price-det {
+    font-size: 28px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    line-height: 19px;
+    color: $white;
+    opacity: 55%;
+
+  }
+
   .collapsed {
     background-color: $black;
     color: $white;
