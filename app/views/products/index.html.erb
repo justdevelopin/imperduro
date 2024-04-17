@@ -6,15 +6,17 @@
       <% @products.each do |product|%>
         <div class="product-card">
           <div class="product-card-body">
-            <div class="product-card-img-capsul">
-              <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
-            </div>
-            <div class="product-textbox">
-              <%= link_to product.name , product, class:"product-card-title" %>
-              <p class="product-card-text mb-3"><%= product.description %></p>
+            <div class="product-card-top">
+              <div class="product-card-img-capsul">
+                <%= image_tag product.image_url, loading: "lazy", class: "product-card-img" %>
+              </div>
+              <div class="product-textbox">
+                <%= link_to product.name , product, class:"product-card-title" %>
+                <p class="product-card-text mb-3"><%= product.description %></p>
+              </div>
             </div>
             <div class="product-price-container">
-              <%# <p class="product-price">12.99</p> %>
+              <p class="product-price">12.99</p>
             </div>
             <%= link_to "Mas detalles", product, class:"btn btn-danger w-100 product-path" %>
           </div>
