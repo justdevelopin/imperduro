@@ -16,7 +16,11 @@
               </div>
             </div>
             <div class="product-price-container">
-              <p class="product-price">€ 12.99 <span>(después de impuestos)</span></p>
+              <% if product.price %>
+                <p class="product-price">€ <%= product.price %> <span>(después de impuestos)</span></p>
+              <% else %>
+                <p class="product-price-no">Precio actualmente no disponible</p>
+              <% end %>
             </div>
             <%= link_to "Mas detalles", product, class:"btn btn-danger w-100 product-path" %>
           </div>

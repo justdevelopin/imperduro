@@ -9,7 +9,6 @@
 #   end
 
 Product.destroy_all
-Color.destroy_all
 
 product1 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/mp-30-7kg.png'),
@@ -83,15 +82,14 @@ product3 = Product.create(
   bajo baldosas en ambientes húmedos como baños, piscinas, balcones, terrazas, etc.'
 )
 
-
-
 product5 = Product.create(
   image_url: ActionController::Base.helpers.image_path('products/jbs-20-accelerator.png'),
   name: 'JBS 20 - Acelerador',
   description: 'Acelera el proceso de secado de la capa superior JBS-20',
   qualities: 'El acelerador no afecta las propiedades técnicas de JBS-20 Liquid
   Rubber y JBS-20 Rubber Tix.',
-  suitables: 'Para usar en JBS-20 Liquid Rubber y JBS-20 Rubber Tix.'
+  suitables: 'Para usar en JBS-20 Liquid Rubber y JBS-20 Rubber Tix.',
+  price: "11,99"
 )
 
 product6 = Product.create(
