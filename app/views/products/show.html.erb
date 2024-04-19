@@ -13,7 +13,11 @@
         <%= image_tag "kiwa-ata.png", class:"quality-logos" %>
       </div>
       <div class="product-price-container">
-        <p class="show-product-price">€ <%= @product.price %> <span>(después de impuestos)</span></p>
+        <% if @product.price %>
+          <p class="show-product-price">€ <%= @product.price %> <span>(después de impuestos)</span></p>
+        <% else %>
+          <p class="show-product-price">Precio actualmente no disponible</p>
+        <% end %>
         <p class="show-product-price-det">Nuestra estructura de precios está diseñada específicamente para atender pedidos al por mayor, garantizando que a medida que aumenten tus cantidades, tus costos disminuyan significativamente. Ya sea que estés emprendiendo un gran proyecto de construcción, organizando un evento masivo o abasteciéndote para operaciones continuas, nuestro modelo de precios adaptado asegura que obtengas el mejor valor por tu inversión.
 <br><br>
 Además, ofrecemos opciones de empaque flexibles para satisfacer los requisitos únicos de tu proyecto. Desde paquetes personalizados hasta contenedores a granel, tenemos todo lo que necesitas. Con nuestra dedicación tanto a la calidad como a la asequibilidad, puedes estar seguro de que recibirás un producto superior que cumpla con tus especificaciones exactas.
