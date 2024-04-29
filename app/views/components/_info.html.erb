@@ -1,88 +1,99 @@
 <section id="section-info">
   <h2 class="info-heading container">INFORMACIÓN</h2>
 
-
-    <div class="d-flex container">
-      <button class="btn-collapse" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Sistema de control</button>
-      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Núcleo de REACH</button>
-      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Sistemas de tuberías</button>
-      <button class="btn-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample3">Medalla De Oro Ecovadis</button>
-    </div>
-    <div class="row">
-      <div class="collapse multi-collapse show" id="multiCollapseExample1">
-        <div class="card card-body">
-          <p class="card-body-p">
-            IMPÉRDURO trabaja con un sistema de control de calidad para
-            garantizar un alto nivel de calidad constante. Todo el proceso de
-            entrada de las materias primas, la fabricación hasta el producto
-            terminado y el suministro se lleva a cabo de conformidad con los
-            procedimientos prescritos y controlados. Por supuesto, el sistema
-            cuenta con las certificaciones ISO 9001 e ISO 14000. De esta manera,
-            el usuario puede estar seguro de que la calidad está garantizada. La
-            calidad del producto, centrada en aplicaciones específicas, está
-            garantizada por marcas de certificación tales como BELGAQUA, British
-            Standard, DVGW, KOMO, Gastec, KIWA, WRAS y CSTB. Muchos productos
-            también cuentan con el distintivo CE y cumplen con los estándares
-            EN. <br> Tanto la calidad del producto como la del proceso son inspeccionadas
-            continuamente por organismos de inspección independientes y
-            acreditados en el propio país y en el extranjero. Cuando elige
-            IMPÉRDURO, usted elige calidad. La calidad del producto, enfocada a
-            diferentes aplicación, está garantizada por marcas y estándares de
-            calidad.
-          </p>
-          <%= image_tag "atestem.png", class:"quality-logo" %>
-
-        </div>
-      </div>
-
-
-      <div class="collapse multi-collapse" id="multiCollapseExample2">
-        <div class="card card-body">
-          <p class="card-body-p">
-            El núcleo de REACH implica que, en principio, una empresa debe
-            conocer los riesgos de todas las sustancias que suministra y debe
-            tomar medidas para gestionar los riesgos. <br> REACH es una nueva normativa europea relacionada con
-            la producción, importación y uso de sustancias químicas solas o en
-            preparados. Las siglas significan Registro, Evaluación, Autorización
-            y Restricción de Sustancias Químicas.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="collapse multi-collapse" id="multiCollapseExample3">
-        <div class="card card-body">
-          <%= image_tag "aenor.png", class:"quality-logo" %>
-          <p class="card-body-p">
-            IMPÉRDURO, como especialista en técnicas de conexión para sistemas
-            de tuberías de plástico, ofrece a los profesionales una gama única
-            de productos de calidad con marcas de homologación líderes en la
-            industria. Nuestros productos son ideales para los sistemas de
-            tuberías industriales y también pueden ayudarle en casos especiales
-            como resistencias químicas, temperaturas más altas, mayores tiempos
-            de apertura, tuberías con diámetros muy grandes o conexiones con un
-            ajuste ancho. Tanto si su sistema de tuberías está hecho de PVC,
-            PVC-C, ABS, PP o PE, IMPÉRDURO siempre ofrece una solución adecuada
-            para unas conexiones sostenibles.
-          </p>
-        </div>
-      </div>
-
-      <div class="collapse multi-collapse" id="multiCollapseExample4">
-        <div class="card card-body">
-          <%= image_tag "oro.png", class:"quality-logo" %>
-          <p class="card-body-p">
-            Los logros de IMPÉRDURO en materia de desarrollo sostenible y
-            responsabilidad social corporativa han sido reconocidos con una
-            medalla de oro.
-            Nuestra actuación en materia de sostenibilidad y responsabilidad
-            social corporativa ha sido revisada y evaluada por EcoVadis,
-            el proveedor independiente de calificaciones de sostenibilidad
-            corporativa más grande y fiable del mundo.
-          </p>
-        </div>
+  <div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Sistema de control
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p class="card-body-p">
+              IMPÉRDURO trabaja con un sistema de control de calidad para
+              garantizar un alto nivel de calidad constante. Todo el proceso de
+              entrada de las materias primas, la fabricación hasta el producto
+              terminado y el suministro se lleva a cabo de conformidad con los
+              procedimientos prescritos y controlados. Por supuesto, el sistema
+              cuenta con las certificaciones ISO 9001 e ISO 14000. De esta manera,
+              el usuario puede estar seguro de que la calidad está garantizada. La
+              calidad del producto, centrada en aplicaciones específicas, está
+              garantizada por marcas de certificación tales como BELGAQUA, British
+              Standard, DVGW, KOMO, Gastec, KIWA, WRAS y CSTB. Muchos productos
+              también cuentan con el distintivo CE y cumplen con los estándares
+              EN. <br> Tanto la calidad del producto como la del proceso son inspeccionadas
+              continuamente por organismos de inspección independientes y
+              acreditados en el propio país y en el extranjero. Cuando elige
+              IMPÉRDURO, usted elige calidad. La calidad del producto, enfocada a
+              diferentes aplicación, está garantizada por marcas y estándares de
+              calidad.
+            </p>
+            <%= image_tag "atestem.png", class:"quality-logo" %>      </div>
       </div>
     </div>
-
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Núcleo de REACH
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p class="card-body-p">
+              El núcleo de REACH implica que, en principio, una empresa debe
+              conocer los riesgos de todas las sustancias que suministra y debe
+              tomar medidas para gestionar los riesgos. <br> REACH es una nueva normativa europea relacionada con
+              la producción, importación y uso de sustancias químicas solas o en
+              preparados. Las siglas significan Registro, Evaluación, Autorización
+              y Restricción de Sustancias Químicas.
+            </p>      </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Sistemas de tuberías
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <%= image_tag "aenor.png", class:"quality-logo" %>
+            <p class="card-body-p">
+              IMPÉRDURO, como especialista en técnicas de conexión para sistemas
+              de tuberías de plástico, ofrece a los profesionales una gama única
+              de productos de calidad con marcas de homologación líderes en la
+              industria. Nuestros productos son ideales para los sistemas de
+              tuberías industriales y también pueden ayudarle en casos especiales
+              como resistencias químicas, temperaturas más altas, mayores tiempos
+              de apertura, tuberías con diámetros muy grandes o conexiones con un
+              ajuste ancho. Tanto si su sistema de tuberías está hecho de PVC,
+              PVC-C, ABS, PP o PE, IMPÉRDURO siempre ofrece una solución adecuada
+              para unas conexiones sostenibles.
+            </p>      </div>
+      </div>
+    </div>
+      <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+          Medalla De Oro Ecovadis
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <%= image_tag "oro.png", class:"quality-logo" %>
+            <p class="card-body-p">
+              Los logros de IMPÉRDURO en materia de desarrollo sostenible y
+              responsabilidad social corporativa han sido reconocidos con una
+              medalla de oro.
+              Nuestra actuación en materia de sostenibilidad y responsabilidad
+              social corporativa ha sido revisada y evaluada por EcoVadis,
+              el proveedor independiente de calificaciones de sostenibilidad
+              corporativa más grande y fiable del mundo.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>

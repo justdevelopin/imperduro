@@ -17,48 +17,53 @@
   }
 }
 
-.row {
-  margin-right: 0;
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.d-flex {
-  justify-content: space-between;
+.accordion-item {
+  border-color: $black;
+  border-width: 10px;
 }
 
-.btn-collapse {
-  border: none;
+.accordion-button {
   font-size: 2rem;
   font-weight: 800;
-  background-color: $main-lighter;
-  color: $white;
-  padding: 1.5rem 4rem;;
+  color: $black;
+  padding: 2rem 7rem;;
   transition: 0.2s;
-  margin-top: 2rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $white;
+  background-color: $main-lighter !important;
+  box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 $main-darker;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: $white !important;
+  outline: 0;
+  box-shadow: none !important;
 }
 
 .collapsed {
-  background-color: $black;
+  background-color: #3a3a3a !important;
   color: $white;
   &:hover {
     background-color: #3b3c3d;
   }
 }
 
-.card {
-  // margin-inline: 6rem;
-  // display: flex;
-  flex-direction: row;
+
+.accordion-body {
+  display: flex;
   align-items: center;
-  gap: 4rem;
-
-}
-
-.card-body {
-  margin-bottom: 1rem;
-  border-color: $main-lighter;
-  background-color: $main-lighter;
-  padding: 3rem;
-  color: $white;
+  gap: 3rem;
+  border-color: $white;
+  background-color: $white;
+  padding: 5rem;
+  color: $black;
   border-radius: 0;
   width: 100%;
 }
@@ -71,49 +76,7 @@
   max-width: 20rem;
 }
 
-@media (max-width: 1020px) {
-
-  .info-heading {
-    font-size: 3.4rem !important;
-    font-weight: 700;
-  }
-
-  .btn-collapse {
-    font-size: 1.6rem;
-  }
-  .card-body-p {
-    font-size: 1.3rem;
-  }
-}
-
 @media (max-width: 800px) {
 
-  .info-heading {
-    font-size: 2.4rem !important;
-    font-weight: 700;
-  }
 
-  .btn-collapse {
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 800;
-    padding: 1.5rem 1rem;
-
-  }
-
-  .card-body-p {
-    font-size: 1.2rem;
-  }
-
-  .card {
-    // margin-inline: 6rem;
-    // display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .quality-logo {
-    max-width: 15rem;
-  }
 }
