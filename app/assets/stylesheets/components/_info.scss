@@ -78,5 +78,7 @@
 
 @media (max-width: 800px) {
 
-
+  .accordion-body {
+    flex-direction: column;
+  }
 }
