@@ -6,7 +6,7 @@
     <h2 class="companion">O simplemente haga clic en el botón a continuación para completar el formulario (Es necesario rellenar las casillas marcadas con *)</h2>
     <div class="form" id="form">
       <%= form_with do |form| %>
-        <div class="divider d-flex">
+        <div class="divider">
           <div class="names d-flex mb-5">
             <%= form.label :name ,"Nombre *" %>
             <%= form.text_area :name, size: "20x1", class:"input" %>

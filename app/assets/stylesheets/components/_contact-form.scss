@@ -32,6 +32,7 @@
   .form {
     font-size: 1.8rem;
     color: #b4b4b4;
+    margin-top: 8rem;
     .divider1 {
       font-size: 1.35rem;
     }
@@ -50,7 +51,8 @@
   }
 
   .divider {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .divider1 {
@@ -68,11 +70,23 @@
 
     .companion {
       line-height: 1.6rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
     }
   }
 
 .enviar {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   font-size: 1.7rem;
+}
+
+@media (max-width: 1090px) {
+  .divider {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .divider {
+    grid-template-columns: 1fr;
+  }
 }
