@@ -1,0 +1,89 @@
+
+.contact-form {
+  margin-top: 10rem;
+  width: 100%;
+  background-color: #3a3a3a;
+  border-radius: 7px;
+  padding: 3rem;
+}
+
+  .secondary-heading {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .companion {
+    color: #b8b8b8;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+  }
+
+  .c-email {
+    color: $white;
+    transition: 0.2s;
+    &:hover {
+      color: #b8b8b8;
+      cursor: pointer;
+    }
+  }
+
+  p .btn-danger {
+    font-size: 2rem;
+    border-radius: 4px;
+    background-color: $main-lighter;
+    color: $white;
+    border: none;
+    &:hover {
+      background-color: $main-darker;
+
+    }
+  }
+
+  .form {
+    font-size: 1.8rem;
+    color: $white;
+    .divider1 {
+      font-size: 1.35rem;
+    }
+  }
+
+  .input {
+    background-color: #efefef;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 2rem;
+    width: 30rem;
+  }
+
+  .names {
+    flex-direction: column;
+  }
+
+  .divider {
+    justify-content: space-between;
+  }
+
+  .divider1 {
+    gap: 10rem;
+
+    &:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .more-details {
+    flex-direction: column;
+  }
+
+  .check-n-confirm  {
+    flex-direction: column;
+
+    .companion {
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+.enviar {
+  margin-top: 5px;
+}

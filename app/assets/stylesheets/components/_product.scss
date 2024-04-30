@@ -4,8 +4,7 @@
   width: 100%;
 
   .main-info {
-    border-bottom: solid 2px #f4e7e62a;
-    padding-bottom: 6rem;
+    // padding-bottom: 6rem;
     margin-bottom: 6rem;
     display: flex;
     align-items: center;
@@ -108,6 +107,10 @@
   }
   .row {
     margin-right: 0;
+  }
+  .accordion-flush {
+    border-bottom: solid 2px #f4e7e62a;
+    padding-bottom: 10rem;
   }
 }
 
