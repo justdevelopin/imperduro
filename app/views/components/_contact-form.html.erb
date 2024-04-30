@@ -1,56 +1,47 @@
-<section class="contact-form container">
+<section class="contact-form">
 
-  <h2 class="secondary-heading">Contáctenos para cualquier pregunta o inquietud</h2>
-  <h2 class="companion">Para aprovechar nuestra exclusiva oferta de precios al por mayor, simplemente contáctanos por correo electrónico a <a href=mailto:“imperduro@gmail.com” class="c-email">imperduro@gmail.com</a> o <a href=mailto:“info@imperduro.com” class="c-email">info@imperduro.com</a>. <br><br> Alternativamente, puedes completar el formulario ubicado convenientemente debajo de la sección del producto. ¡Colaboremos para hacer realidad tu visión con productos premium a precios competitivos!</h2>
-  <h2 class="companion">O simplemente haga clic en el botón a continuación para completar el formulario (Es necesario rellenar las casillas marcadas con *)</h2>
-  <div class="form">
-    <%= form_with do |form| %>
-      <div class="divider d-flex">
-        <div class="names d-flex mb-5">
-          <%= form.label :name ,"Nombre *" %>
-          <%= form.text_area :name, size: "20x1", class:"input" %>
-          <%= form.label :name ,"Ambos apellidos *" %>
-          <%= form.text_area :name, size: "25x1", class:"input" %>
-        </div>
-
-        <div class="more-details d-flex">
-          <%= form.label :email ,"Correo electrónico *" %>
-          <%= form.email_field :email, class:"input" %>
-
-          <%= form.label :phone ,"Número de teléfono" %>
-          <%= form.telephone_field :phone, class:"input" %>
-
-          <%= form.label :homepage ,"Sitio web" %>
-          <%= form.url_field :homepage, class:"input" %>
-        </div>
-
-        <div class="check-n-confirm d-flex">
-          <h4 class="companion">Por favor, marque las casillas a continuación.</h4>
-          <div>
-            <div class="divider1">
-              <%= form.radio_button :age, "child" %>
-              <%= form.label :age_child, "I am younger than 21" %>
-            </div>
-            <div class="divider1">
-              <%= form.radio_button :age, "adult" %>
-              <%= form.label :age_adult, "I am over 21" %>
-            </div>
+  <div class="container">
+    <h2 class="secondary-heading">Contáctenos</h2>
+    <h2 class="companion">Para aprovechar nuestra exclusiva oferta de precios al por mayor, simplemente contáctanos por correo electrónico a <a href=mailto:“imperduro@gmail.com” class="c-email">imperduro@gmail.com</a> o <a href=mailto:“info@imperduro.com” class="c-email">info@imperduro.com</a>. <br><br> Alternativamente, puedes completar el formulario ubicado convenientemente debajo de la sección del producto. ¡Colaboremos para hacer realidad tu visión con productos premium a precios competitivos!</h2>
+    <h2 class="companion">O simplemente haga clic en el botón a continuación para completar el formulario (Es necesario rellenar las casillas marcadas con *)</h2>
+    <div class="form" id="form">
+      <%= form_with do |form| %>
+        <div class="divider d-flex">
+          <div class="names d-flex mb-5">
+            <%= form.label :name ,"Nombre *" %>
+            <%= form.text_area :name, size: "20x1", class:"input" %>
+            <%= form.label :name ,"Ambos apellidos *" %>
+            <%= form.text_area :name, size: "25x1", class:"input" %>
+            <%= form.label :email ,"Correo electrónico *" %>
+            <%= form.email_field :email, class:"input" %>
           </div>
-            <h4 class="companion">Por favor, acepte nuestra política de privacidad</h4>
-            <div class="divider1">
-              <%= form.check_box :pet_dog %>
-              <%= form.label :pet_dog, "I own a dog *" %>
-            </div>
-            <div class="divider1">
-              <%= form.check_box :pet_cat %>
-              <%= form.label :pet_cat, "I own a cat" %>
-            </div>
-          <%= form.submit "Enviar", class:"enviar" %>
-        </div>
-      </div>
 
-    <% end %>
+          <div class="more-details d-flex">
+            <%= form.label :phone ,"Número de teléfono" %>
+            <%= form.telephone_field :phone, class:"input" %>
+
+            <%= form.label :homepage ,"Sitio web" %>
+            <%= form.url_field :homepage, class:"input" %>
+          </div>
+
+          <div class="check-n-confirm d-flex">
+              <h4 class="companion">Por favor, selecciona las opciones que correspondan:</h4>
+              <div class="divider1">
+                <%= form.check_box :pet_dog %>
+                <%= form.label :pet_dog, "Acepta nuestra política de privacidad. *" %>
+              </div>
+              <div class="divider1">
+                <%= form.check_box :pet_cat %>
+                <%= form.label :pet_cat, "¿Quieres recibir nuestras promociones? Marca la casilla si sí." %>
+              </div>
+            <%= form.submit "Enviar", class:"enviar btn btn-danger" %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
   </div>
+
 
 
 </section>

@@ -1,19 +1,21 @@
 
 .contact-form {
-  margin-top: 10rem;
   width: 100%;
-  background-color: #3a3a3a;
-  border-radius: 7px;
-  padding: 3rem;
-}
+  background-color: $black;
+  padding-block: 10rem;
+  border-top: solid 2px #f4e7e62a;
+
 
   .secondary-heading {
-    font-size: 2.6rem;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
+    color: $white;
   }
+}
+
 
   .companion {
-    color: #b8b8b8;
+    color: #b4b4b4;
     margin-bottom: 4rem;
     line-height: 3rem;
   }
@@ -27,21 +29,9 @@
     }
   }
 
-  p .btn-danger {
-    font-size: 2rem;
-    border-radius: 4px;
-    background-color: $main-lighter;
-    color: $white;
-    border: none;
-    &:hover {
-      background-color: $main-darker;
-
-    }
-  }
-
   .form {
     font-size: 1.8rem;
-    color: $white;
+    color: #b4b4b4;
     .divider1 {
       font-size: 1.35rem;
     }
@@ -64,10 +54,8 @@
   }
 
   .divider1 {
-    gap: 10rem;
-
     &:nth-child(2) {
-      margin-bottom: 2rem;
+      margin-bottom: 5px;
     }
   }
 
@@ -85,5 +73,6 @@
   }
 
 .enviar {
-  margin-top: 5px;
+  margin-top: 2rem;
+  font-size: 1.7rem;
 }
